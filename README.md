@@ -5,7 +5,7 @@ Web project for AAJA's 2014 Student Newsroom in Washington D.C., Aug. 13 to 16.
 
 who
 ------
-Project built by [Frank Bi] (twitter.com/frankiebi) and [Dan Hill] (twitter.com/danhillreports) for the students of this year's AAJA Student Newsroom.
+Project built by [Frank Bi] (http://twitter.com/frankiebi) and [Dan Hill] (http://twitter.com/danhillreports) for the students of this year's AAJA Student Newsroom.
 
 what
 ------
