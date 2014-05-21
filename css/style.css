@@ -1,0 +1,36 @@
+h1 {
+  display: inline;
+  margin-right: 10px;
+}
+
+img {
+  display: block;
+  margin: 10px;
+}
+.header {
+  padding-bottom: 9px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+.logo {
+  margin: 0px;
+  max-width: 414px;
+  width: 25%;
+  display: inline;
+}
+
+@media screen and (max-width: 505px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 404px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
