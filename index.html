@@ -9,6 +9,7 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet"></link>
     <link href="css/style.css" rel="stylesheet"></link>
+    <link type="text/css" rel="stylesheet" href="css/photo-grid-style.css">
   </head>
   <body>
     <div class="container">
@@ -17,9 +18,26 @@
       </div>
       <img src="img/groups.png"/>
       <img src="img/parties.png"/>
-      <img src="img/profiles.png"/>
+      <div id="wrapper" class="cf">
+        <div class="photo-grid-container cf"></div>
+      </div>
       <img src="img/globes.png"/>
     </div>
     <div class="footer">Made by Dan and Frank</div>
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
+    <script type="text/x-handlebars-template" id="photo-box-template">
+
+      <div class="photo-box {{ short }}">
+        <h2 class="photo-box-title {{ short }}-title">{{ name }}</h2>
+        <div class="photo-box-text {{ short }}-text">
+          <h3>{{ name }}</h3>
+          <p>{{ blurb }}</p>
+        </div>
+      </div>
+
+    </script>
+    <script src="js/photogrid.js"></script>
   </body>
 </html>
