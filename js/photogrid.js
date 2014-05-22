@@ -1,9 +1,9 @@
 var photoGrid = {
 
     init: function(json) {
-        photoGrid.boxStatus = [];
+        photoGrid.boxStatus = 0;
         $.getJSON(json.path, photoGrid.renderGrid);
-    },
+    }, 
 
     renderGrid: function(obj) {
         var source = $("#photo-box-template").html();
@@ -16,31 +16,27 @@ var photoGrid = {
     },
 
     flipToText: function() {
+        $(".photo-box-title").click(function() {
+            var el = (this.className)
+                .replace("photo-box-title ", "")
+                .replace("-title", "");
 
-        console.log(photoGrid.boxStatus);
+            $("." + el + "-title").hide();
+            $("." + el + "-text").show();
 
-        if (photoGrid.boxStatus == 0) {
-            $(".photo-box").click(function() {
-                photoGrid.boxStatus = 1;
-                var el = (this.className).replace("photo-box ", "");
-                $("." + el + "-text").show();
-                $("." + el + "-title").hide();
-            });
-        }
+        });
     },
 
     flipToTitle: function() {
+        $(".photo-box-text").click(function() {
+            var el = (this.className)
+                .replace("photo-box-text ", "")
+                .replace("-text", "");
 
-        console.log(photoGrid.boxStatus);
+            $("." + el + "-text").hide();
+            $("." + el + "-title").show();
 
-        if (photoGrid.boxStatus == 1) {
-            $(".photo-box").click(function() {
-                photoGrid.boxStatus = 0;
-                var el = (this.className).replace("photo-box ", "");
-                $("." + el + "-text").hide();
-                $("." + el + "-title").show();
-            });
-        }
+        });
     }
 
 }

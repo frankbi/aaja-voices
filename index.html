@@ -29,13 +29,18 @@
     <script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
     <script type="text/x-handlebars-template" id="photo-box-template">
 
-      <div class="photo-box {{ short }}">
-        <h2 class="photo-box-title {{ short }}-title">{{ name }}</h2>
-        <div class="photo-box-text {{ short }}-text">
-          <h3>{{ name }}</h3>
-          <p>{{ blurb }}</p>
-        </div>
-      </div>
+		<div class="photo-box cf">
+
+			<div class="photo-box-title {{ short }}-title" style="background-image:url('{{ gridPhoto }}')">
+				<h2>{{ name }}</h2>
+			</div>
+
+			<div class="photo-box-text {{ short }}-text">
+				<h3>{{ name }}</h3>
+				<p>{{ blurb }}</p>				
+			</div>
+
+		</div>
 
     </script>
     <script src="js/photogrid.js"></script>
