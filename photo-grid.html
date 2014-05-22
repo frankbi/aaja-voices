@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	    <meta charset="utf-8">
+	    <meta name="description" content="">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="css/photo-grid-style.css">
+	</head>
+	<body>
+
+		<div id="wrapper" class="cf">
+			<div class="photo-grid-container cf"></div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/handlebars-v1.3.0.js"></script>
+		<script type="text/x-handlebars-template" id="photo-box-template">
+
+
+		<div class="photo-box cf">
+
+			<div class="photo-box-title {{ short }}-title" style="background-image:url('{{ gridPhoto }}')">
+				<h2>{{ name }}</h2>
+			</div>
+
+			<div class="photo-box-text {{ short }}-text">
+				<h3>{{ name }}</h3>
+				<p>{{ blurb }}</p>				
+			</div>
+
+		</div>
+
+
+		</script>
+		<script type="text/javascript">
+
+		var photoGrid = {
+
+			init: function(json) {
+				photoGrid.boxStatus = 0;
+				$.getJSON(json.path, photoGrid.renderGrid);
+			}, 
+
+			renderGrid: function(obj) {
+				var source = $("#photo-box-template").html();
+				var template = Handlebars.compile(source);
+				for (var i = 0; i < obj.people.length; i++) {
+					$(".photo-grid-container").append(template(obj.people[i]));
+				}
+				photoGrid.flipToText();
+				photoGrid.flipToTitle();
+			},
+
+			flipToText: function() {
+				$(".photo-box-title").click(function() {
+					var el = (this.className)
+						.replace("photo-box-title ", "")
+						.replace("-title", "");
+
+					$("." + el + "-title").hide();
+					$("." + el + "-text").show();
+
+				});
+			},
+
+			flipToTitle: function() {
+				$(".photo-box-text").click(function() {
+					var el = (this.className)
+						.replace("photo-box-text ", "")
+						.replace("-text", "");
+
+					$("." + el + "-text").hide();
+					$("." + el + "-title").show();
+
+				});
+			}
+
+		}
+
+		photoGrid.init({ path: "data/photo-grid-data.json" });
+
+		</script>
+	</body>
+</html>

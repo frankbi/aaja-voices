@@ -11,49 +11,49 @@
 			"name": "John Cho",
 			"title": "Actor",
 			"blurb": "Born in South Korea, Cho first became a household name in the cult film Harold and Kumar Go To White Castle.",
-			"gridPhoto": "img/lin.jpg"
+			"gridPhoto": "img/cho.jpg"
 		}, {
 			"short": "ling",
 			"name": "Lisa Ling",
 			"title": "Journalist",
 			"blurb": "Born in North California, Ling is best known for her role as host of Our America with Lisa Ling on OWN",
-			"gridPhoto": "img/lin.jpg"
+			"gridPhoto": "img/ling.jpg"
 		}, {
 			"short": "chu",
 			"name": "Steven Chu",
 			"title": "Former U.S. Secretary of Energy",
 			"blurb": "Chu is the first person appointed to the U.S. Cabinet after having won a Nobel Prize in Physics in 1997.",
-			"gridPhoto": "img/lin.jpg"
+			"gridPhoto": "img/chu.jpg"
 		}, {
 			"short": "locke",
 			"name": "Gary Locke",
 			"title": "Former Governor of Washington",
 			"blurb": "The Yale graduate is the first Chinese-American to ever serve as governor in the continental United States.",
-			"gridPhoto": "img/lin.jpg"
+			"gridPhoto": "img/locke.jpg"
 		}, {
 			"short": "chang",
 			"name": "Michael Chang",
 			"title": "Tennis Player",
 			"blurb": "Chang became the youngest make player to win a Grand Slam singles title when he won the French Open in 1989 at age 17.",
-			"gridPhoto": "img/lin.jpg"
+			"gridPhoto": "img/chang.jpg"
 		}, {
 			"short": "ma",
 			"name": "Yo-Yo Ma",
 			"title": "Cellist",
 			"blurb": "Ma was only seven years old when he performed for two U.S. Presidents, Eisenhower and Kennedy.",
-			"gridPhoto": "img/lin.jpg"
+			"gridPhoto": "img/ma.jpg"
 		}, {
 			"short": "hotdog",
 			"name": "MC HotDog",
 			"title": "Rapper",
 			"blurb": "While not exactly Chinese-American, HotDog is a Taiwanese rapper known for his use of explicit lyrics in his song.",
-			"gridPhoto": "img/lin.jpg"
+			"gridPhoto": "img/hotdog.jpg"
 		}, {
 			"short": "ming",
 			"name": "Yao Ming",
 			"title": "Basketball Player",
 			"blurb": "Ming was the first international player to ever be drafted No. 1 overall in the NBA Draft.",
-			"gridPhoto": "img/lin.jpg"
+			"gridPhoto": "img/ming.jpg"
 		}
 	]
 }
